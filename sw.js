@@ -1,5 +1,5 @@
 'use strict';
-const CACHE='integrated-flight-study-pages-v1';
+const CACHE='integrated-flight-study-pages-v2';
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(['./','./index.html'])).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil(self.clients.claim()));
 self.addEventListener('fetch',event=>{
